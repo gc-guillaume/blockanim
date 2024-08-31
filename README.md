@@ -30,11 +30,12 @@ If you'd like to tinker with the source code or create your own CSS animations, 
 
 Here’s a quick reference for the available animations and how to use them:
 
-| **Class**                                    | **Requirement** | **Description**                                                                 | **Example**                                 |
-|----------------------------------------------|-----------------|---------------------------------------------------------------------------------|---------------------------------------------|
-| `blockanim-{animation}`                      | Required        | Triggers the animation on scroll. Choose from over 35 animations available.     | `blockanim-slide-up`                        |
-| `blockanim-{animation}-{delay in ms}`        | Optional        | Adds a delay to the animation in milliseconds, useful for sequential animations. | `blockanim-slide-up-400`                    |
-| `blockanim-{animation}-{repeat}`             | Optional        | Repeats the animation each time the element is visible in the viewport.         | `blockanim-slide-up-400-repeat`             |
+| **Class**                                    | **Requirement** | **Description**                                                                 | **Example**                                 | **Code**                                    |
+|----------------------------------------------|-----------------|---------------------------------------------------------------------------------|---------------------------------------------|---------------------------------------------|
+| `blockanim-{animation}`                      | Required        | Triggers the animation on scroll. Choose from over 35 animations available. [Check the demo](https://blockanim.guillaumecoulin.com/blockanim_demo.html).     | `blockanim-slide-up`                        | `<div class="blockanim-slide-up"></div>`    |
+| `blockanim-{animation}-{delay in ms}`        | Optional        | Adds a delay to the animation in milliseconds, useful for sequential animations. | `blockanim-slide-up-400`                    | `<div class="blockanim-slide-up-400"></div>`|
+| `blockanim-{animation}-{repeat}`             | Optional        | Repeats the animation each time the element is visible in the viewport.         | `blockanim-slide-up-400-repeat`             | `<div class="blockanim-slide-up-400-repeat"></div>`|
+
 
 ## License
 
