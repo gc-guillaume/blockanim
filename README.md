@@ -13,13 +13,18 @@ blockAnim - Dumb, lightweight &amp; class based css animations for your website.
 
 ## How to Use
 
-1. **Download and Include Locally**:
-   - Download the source code from [GitHub](https://github.com/gc-guillaume/textanim).
-   - Include the CSS and JS files in your project.
+### Option 1: Use a CDN (Recommended)
 
-2. **Apply Classes**:
-   - Add the `blockanim-{animation}` class to any HTML element to trigger animations.
-   - Optional: Add delay and repeat parameters.
+This is the easiest way to get started with `textAnim.js`. Simply copy and paste the required lines into your HTML file, add your first class to anu html element, and watch the magic happen!
+
+`<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/gc-guillaume/blockanim/animations.min.css">`
+
+`<script src="https://cdn.jsdelivr.net/gh/gc-guillaume/blockanim/animations.min.js"></script>`
+
+
+### Option 2: Download and Customize
+
+If you'd like to tinker with the source code or create your own CSS animations, download the library as a zip file. Inside, you'll find the source code and a demo file to help you get started.
 
 ## Available Animations
 
