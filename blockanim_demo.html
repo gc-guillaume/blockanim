@@ -1,0 +1,285 @@
+   
+<style>@import url(https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap);.flex{display:flex!important;flex-direction:column-reverse!important;align-items:center!important;justify-content:center!important;height:auto!important;position:relative!important}.flex img{width:350px;height:350px;border-radius:8px;object-fit:cover}body{overflow-x:hidden;font-size:40px;margin:0;padding:0;font-family:Inter,sans-serif;font-optical-sizing:auto;font-style:normal;color:#0d060f}*,.demo>div{box-sizing:border-box}.badge,h2{text-align:center}.badge,.redo{border-radius:50px}html{scroll-behavior:smooth}h2{font-size:clamp(3rem,5vw,8.1rem);margin:.5em 0;line-height:1.2;font-weight:400;z-index:1}span.number{position:absolute;bottom:0;right:30px;font-size:20vw;opacity:.033;z-index:0}.badge,.demo>div{display:flex;justify-content:center;align-items:center}.demo>div{height:calc(100vh - 90px);padding:0 1em;flex-direction:column;gap:0;background:#f0f0f0;border-bottom:1px solid rgba(0,0,0,.25);position:relative}.demo>div>div{display:flex;gap:8px;flex-direction:row;position:absolute;top:1em}.badge{font-family:monospace;font-size:14px;padding:4px 12px;cursor:default;min-width:32px;background:rgba(0,0,0,.07);transition:.4s cubic-bezier(.75,.1,.1,.75);height:32px!important}.badge:hover{background:0 0}span.copied{background:#17b169!important;color:#fff;pointer-events:none;border-color:#17b169}.redo{cursor:pointer;width:32px}.redo:hover{transform:rotate(360deg)}@media all and (max-width:768px){.badge{font-size:14px;padding:18px;height:32px!important}.demo>div{gap:.5em}}
+</style>
+<!doctype html>
+<html lang=en>
+   <head>
+      <meta charset=UTF-8>
+      <meta name=viewport content="width=device-width,initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="animations.min.css">
+      <title>textAnim.js - Demo</title>
+   </head>
+   <body class=demo>
+      <div>
+         <div>
+            <span class="badge class"></span>
+            <span class="badge redo">⟳</span>
+         </div>
+         <div class="blockanim-slide-up-140 flex">This block slides up on scroll<img src="img/paon4.jpg" /></div>
+      </div>
+      <div>
+         <div>
+            <span class="badge class"></span>
+            <span class="badge redo">⟳</span>
+         </div>
+         <div class="blockanim-slide-down-140 flex">This block slides down on scroll<img src="img/paon4.jpg" /></div>
+      </div>
+      <div>
+         <div>
+            <span class="badge class"></span>
+            <span class="badge redo">⟳</span>
+         </div>
+         <div class="blockanim-slide-left-140 flex">This block slides left on scroll<img src="img/paon4.jpg" /></div>
+      </div>
+      <div>
+         <div>
+            <span class="badge class"></span>
+            <span class="badge redo">⟳</span>
+         </div>
+         <div class="blockanim-slide-right-140 flex">This block slides right on scroll<img src="img/paon4.jpg" /></div>
+      </div>
+      <div>
+         <div>
+            <span class="badge class"></span>
+            <span class="badge redo">⟳</span>
+         </div>
+         <div class="blockanim-blur-in-140 flex">This block fades in with blur on scroll<img src="img/paon4.jpg" /></div>
+      </div>
+      <div>
+         <div>
+            <span class="badge class"></span>
+            <span class="badge redo">⟳</span>
+         </div>
+         <div class="blockanim-scale-up-140 flex">This block scales up on scroll<img src="img/paon4.jpg" /></div>
+      </div>
+      <div>
+         <div>
+            <span class="badge class"></span>
+            <span class="badge redo">⟳</span>
+         </div>
+         <div class="blockanim-scale-down-140 flex">This block scales down on scroll<img src="img/paon4.jpg" /></div>
+      </div>
+      <div>
+         <div>
+            <span class="badge class"></span>
+            <span class="badge redo">⟳</span>
+         </div>
+         <div class="blockanim-rotate-140 flex">This block rotates on scroll<img src="img/paon4.jpg" /></div>
+      </div>
+      <div>
+         <div>
+            <span class="badge class"></span>
+            <span class="badge redo">⟳</span>
+         </div>
+         <div class="blockanim-clip-140 flex">This block appears with clipping effect on scroll<img src="img/paon4.jpg" /></div>
+      </div>
+      <div>
+         <div>
+            <span class="badge class"></span>
+            <span class="badge redo">⟳</span>
+         </div>
+         <div class="blockanim-clip-top-140 flex">This block appears with clipping effect on scroll<img src="img/paon4.jpg" /></div>
+      </div>
+      <div>
+         <div>
+            <span class="badge class"></span>
+            <span class="badge redo">⟳</span>
+         </div>
+         <div class="blockanim-clip-bottom-140 flex">This block appears with clipping effect on scroll<img src="img/paon4.jpg" /></div>
+      </div>
+      <div>
+         <div>
+            <span class="badge class"></span>
+            <span class="badge redo">⟳</span>
+         </div>
+         <div class="blockanim-clip-right-140 flex">This block appears with clipping effect on scroll<img src="img/paon4.jpg" /></div>
+      </div>
+      <div>
+         <div>
+            <span class="badge class"></span>
+            <span class="badge redo">⟳</span>
+         </div>
+         <div class="blockanim-clip-left-140 flex">This block appears with clipping effect on scroll<img src="img/paon4.jpg" /></div>
+      </div> 
+      <div>
+         <div>
+            <span class="badge class"></span>
+            <span class="badge redo">⟳</span>
+         </div>
+         <div class="blockanim-clip-diagonal-top-right-140 flex">This block appears with clipping effect on scroll<img src="img/paon4.jpg" /></div>
+      </div> 
+      <div>
+         <div>
+            <span class="badge class"></span>
+            <span class="badge redo">⟳</span>
+         </div>
+         <div class="blockanim-clip-diagonal-top-left-140 flex">This block appears with clipping effect on scroll<img src="img/paon4.jpg" /></div>
+      </div> 
+      <div>
+         <div>
+            <span class="badge class"></span>
+            <span class="badge redo">⟳</span>
+         </div>
+         <div class="blockanim-clip-diagonal-bottom-right-140 flex">This block appears with clipping effect on scroll<img src="img/paon4.jpg" /></div>
+      </div> 
+      <div>
+         <div>
+            <span class="badge class"></span>
+            <span class="badge redo">⟳</span>
+         </div>
+         <div class="blockanim-clip-diagonal-bottom-left-140 flex">This block appears with clipping effect on scroll<img src="img/paon4.jpg" /></div>
+      </div>                                                
+      <div>
+         <div>
+            <span class="badge class"></span>
+            <span class="badge redo">⟳</span>
+         </div>
+         <div class="blockanim-center-blur-140 flex">This block fades in from center with blur on scroll<img src="img/paon4.jpg" /></div>
+      </div>
+      <div>
+         <div>
+            <span class="badge class"></span>
+            <span class="badge redo">⟳</span>
+         </div>
+         <div class="blockanim-rotate-3d-140 flex">This block rotates in 3D on scroll<img src="img/paon4.jpg" /></div>
+      </div>
+      <div>
+         <div>
+            <span class="badge class"></span>
+            <span class="badge redo">⟳</span>
+         </div>
+         <div class="blockanim-jump-140 flex">This block jumps on scroll<img src="img/paon4.jpg" /></div>
+      </div>
+      <div>
+         <div>
+            <span class="badge class"></span>
+            <span class="badge redo">⟳</span>
+         </div>
+         <div class="blockanim-stretch-140 flex">This block stretches on scroll<img src="img/paon4.jpg" /></div>
+      </div>
+      <div>
+         <div>
+            <span class="badge class"></span>
+            <span class="badge redo">⟳</span>
+         </div>
+         <div class="blockanim-diagonal-140 flex">This block slides in diagonally on scroll<img src="img/paon4.jpg" /></div>
+      </div>
+      <div>
+         <div>
+            <span class="badge class"></span>
+            <span class="badge redo">⟳</span>
+         </div>
+         <div class="blockanim-diagonal-top-left-140 flex">This block slides diagonally top-left on scroll<img src="img/paon4.jpg" /></div>
+      </div>
+      <div>
+         <div>
+            <span class="badge class"></span>
+            <span class="badge redo">⟳</span>
+         </div>
+         <div class="blockanim-diagonal-top-right-140 flex">This block slides diagonally top-right on scroll<img src="img/paon4.jpg" /></div>
+      </div>
+      <div>
+         <div>
+            <span class="badge class"></span>
+            <span class="badge redo">⟳</span>
+         </div>
+         <div class="blockanim-diagonal-bottom-left-140 flex">This block slides diagonally bottom-left on scroll<img src="img/paon4.jpg" /></div>
+      </div>
+      <div>
+         <div>
+            <span class="badge class"></span>
+            <span class="badge redo">⟳</span>
+         </div>
+         <div class="blockanim-diagonal-bottom-right-140 flex">This block slides diagonally bottom-right on scroll<img src="img/paon4.jpg" /></div>
+      </div>
+      <div>
+         <div>
+            <span class="badge class"></span>
+            <span class="badge redo">⟳</span>
+         </div>
+         <div class="blockanim-skew-140 flex">This block skews into view on scroll<img src="img/paon4.jpg" /></div>
+      </div>
+      <div>
+         <div>
+            <span class="badge class"></span>
+            <span class="badge redo">⟳</span>
+         </div>
+         <div class="blockanim-zoom-140 flex">This block zooms into view on scroll<img src="img/paon4.jpg" /></div>
+      </div>
+      <div>
+         <div>
+            <span class="badge class"></span>
+            <span class="badge redo">⟳</span>
+         </div>
+         <div class="blockanim-flip-140 flex">This block flips into view on scroll<img src="img/paon4.jpg" /></div>
+      </div>
+      <div>
+         <div>
+            <span class="badge class"></span>
+            <span class="badge redo">⟳</span>
+         </div>
+         <div class="blockanim-shake-140 flex">This block shakes into view on scroll<img src="img/paon4.jpg" /></div>
+      </div>
+      <div>
+         <div>
+            <span class="badge class"></span>
+            <span class="badge redo">⟳</span>
+         </div>
+         <div class="blockanim-blur-scale-140 flex">This block blurs and scales into view on scroll<img src="img/paon4.jpg" /></div>
+      </div>
+      <div>
+         <div>
+            <span class="badge class"></span>
+            <span class="badge redo">⟳</span>
+         </div>
+         <div class="blockanim-slide-rotate-140 flex">This block slides and rotates into view on scroll<img src="img/paon4.jpg" /></div>
+      </div>
+      <div>
+         <div>
+            <span class="badge class"></span>
+            <span class="badge redo">⟳</span>
+         </div>
+         <div class="blockanim-tilt-140 flex">This block tilts into view on scroll<img src="img/paon4.jpg" /></div>
+      </div>
+      <div>
+         <div>
+            <span class="badge class"></span>
+            <span class="badge redo">⟳</span>
+         </div>
+         <div class="blockanim-compress-140 flex">This block compresses and expands on scroll<img src="img/paon4.jpg" /></div>
+      </div>
+      <div>
+         <div>
+            <span class="badge class"></span>
+            <span class="badge redo">⟳</span>
+         </div>
+         <div class="blockanim-swing-140 flex">This block swings into view on scroll<img src="img/paon4.jpg" /></div>
+      </div>
+      <div>
+         <div>
+            <span class="badge class"></span>
+            <span class="badge redo">⟳</span>
+         </div>
+         <div class="blockanim-unfold-140 flex">This block unfolds into view on scroll<img src="img/paon4.jpg" /></div>
+      </div>
+      <div>
+         <div>
+            <span class="badge class"></span>
+            <span class="badge redo">⟳</span>
+         </div>
+         <div class="blockanim-roll-140 flex">This block rolls into view on scroll<img src="img/paon4.jpg" /></div>
+      </div>
+      <div>
+         <div>
+            <span class="badge class"></span>
+            <span class="badge redo">⟳</span>
+         </div>
+         <div class="blockanim-fold-140 flex">This block folds into view on scroll<img src="img/paon4.jpg" /></div>
+      </div>
+
+      <script src="animations.min.js"></script>
+      <script>
+         document.addEventListener("DOMContentLoaded",function(){function t(){console.log("Redo button clicked");const e=this.closest("div").nextElementSibling;e&&"DIV"===e.tagName?(console.log("Found div:",e),e.classList.remove("blockanim-visible"),console.log(".blockanim-visible removed from div"),e.offsetWidth,setTimeout(()=>{e.classList.add("blockanim-visible"),console.log(".blockanim-visible added back to div")},1100)):console.error("No div found")}document.querySelectorAll(".redo").forEach(e=>{e.addEventListener("click",t)}),document.querySelectorAll("div > div:first-child").forEach(function(e){const o=e.querySelector(".class");if(e=e.nextElementSibling,o&&e){let t=e.className.split(" ").find(e=>e.startsWith("blockanim-"));t?(t=t.replace(/-\d+$/,""),o.textContent=t,console.log("Set span text to: "+t),o.addEventListener("click",function(){navigator.clipboard.writeText(t).then(()=>{console.log("Copied text: "+t);const e=o.textContent;o.textContent="Class copied!",o.classList.add("copied"),setTimeout(()=>{o.textContent=e,o.classList.remove("copied")},1400)}).catch(e=>{console.error("Failed to copy text: ",e)})})):console.error("No blockanim class found on the target div")}}),document.querySelectorAll(".demo > div").forEach((e,t)=>{var t="."+(t+1).toString().padStart(2,"0"),o=document.createElement("span");o.textContent=t,o.classList.add("number"),e.prepend(o)})});
+</script>
+   </body>
+</html>

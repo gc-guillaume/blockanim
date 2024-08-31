@@ -1,0 +1,439 @@
+/** animations **/
+
+[class*="blockanim"]{
+    transition: all .8s .08s cubic-bezier(.04,.79,.04,1)
+}
+[class*="blockanim-"]{
+    opacity: 0;
+}
+
+/* Animation 1: Fade in and slide up */
+ [class*="blockanim-slide-up"]  {
+    transform: translateY(50px);
+}
+
+[class*="blockanim-slide-up"].blockanim-visible{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Animation 2: Fade in and slide down */
+ [class*="blockanim-slide-down"]  {
+    transform: translateY(-50px);
+}
+
+[class*="blockanim-slide-down"].blockanim-visible{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Animation 3: Fade in and slide left */
+ [class*="blockanim-slide-left"]  {
+    transform: translateX(50px);
+}
+
+ [class*="blockanim-slide-left"].blockanim-visible{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Animation 4: Fade in and slide right */
+ [class*="blockanim-slide-right"]  {
+    transform: translateX(-50px);
+}
+
+ [class*="blockanim-slide-right"].blockanim-visible{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Animation 5: Fade in with blur */
+ [class*="blockanim-blur-in"]  {
+    transform: translateY(0);
+    filter: blur(10px);
+}
+
+ [class*="blockanim-blur-in"].blockanim-visible{
+    opacity: 1;
+    filter: blur(0);
+}
+
+/* Animation 6: Fade in with scale up */
+ [class*="blockanim-scale-up"]  {
+    transform: scale(0.8);
+}
+
+ [class*="blockanim-scale-up"].blockanim-visible{
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Animation 7: Fade in with scale down */
+ [class*="blockanim-scale-down"]  {
+    transform: scale(1.2);
+}
+
+ [class*="blockanim-scale-down"].blockanim-visible{
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Animation 8: Fade in with rotate */
+ [class*="blockanim-rotate"]  {
+    transform: rotate(-15deg);
+}
+
+ [class*="blockanim-rotate"].blockanim-visible{
+    opacity: 1;
+    transform: rotate(0deg);
+}
+
+/* Animation 9: Fade in with clipping (overflow hidden effect) */
+ [class*="blockanim-clip"]  {
+    position: relative;
+    transform: translateY(50px);
+    clip-path: inset(0 50%);
+}
+
+[class*="blockanim-clip"].blockanim-visible{
+    opacity: 1;
+    transform: translateY(0);
+    clip-path: inset(0 0);
+}
+/* Clip Haut */
+[class*="blockanim-clip-top"] {
+    transform: translateY(50px);
+    clip-path: inset(50% 0 0 0);
+}
+
+[class*="blockanim-clip-top"].blockanim-visible {
+    opacity: 1;
+    transform: translateY(0);
+    clip-path: inset(0 0 0 0);
+}
+
+/* Clip Bas */
+[class*="blockanim-clip-bottom"] {
+    transform: translateY(-50px);
+    clip-path: inset(0 0 50% 0);
+}
+
+[class*="blockanim-clip-bottom"].blockanim-visible {
+    opacity: 1;
+    transform: translateY(0);
+    clip-path: inset(0 0 0 0);
+}
+
+/* Clip Droite */
+[class*="blockanim-clip-right"] {
+    transform: translateX(-50px);
+    clip-path: inset(0 0 0 50%);
+}
+
+[class*="blockanim-clip-right"].blockanim-visible {
+    opacity: 1;
+    transform: translateX(0);
+    clip-path: inset(0 0 0 0);
+}
+
+/* Clip Gauche */
+[class*="blockanim-clip-left"] {
+    transform: translateX(50px);
+    clip-path: inset(0 50% 0 0);
+}
+
+[class*="blockanim-clip-left"].blockanim-visible {
+    opacity: 1;
+    transform: translateX(0);
+    clip-path: inset(0 0 0 0);
+}
+
+/* Clip Diagonale Haut-Droite */
+[class*="blockanim-clip-diagonal-top-right"] {
+    transform: translate(-50px, 50px);
+    clip-path: inset(50% 0 0 50%);
+}
+
+[class*="blockanim-clip-diagonal-top-right"].blockanim-visible {
+    opacity: 1;
+    transform: translate(0, 0);
+    clip-path: inset(0 0 0 0);
+}
+
+/* Clip Diagonale Bas-Gauche */
+[class*="blockanim-clip-diagonal-bottom-left"] {
+    transform: translate(50px, -50px);
+    clip-path: inset(0 50% 50% 0);
+}
+
+[class*="blockanim-clip-diagonal-bottom-left"].blockanim-visible {
+    opacity: 1;
+    transform: translate(0, 0);
+    clip-path: inset(0 0 0 0);
+}
+
+/* Clip Diagonale Haut-Gauche */
+[class*="blockanim-clip-diagonal-top-left"] {
+    transform: translate(50px, 50px);
+    clip-path: inset(50% 50% 0 0);
+}
+
+[class*="blockanim-clip-diagonal-top-left"].blockanim-visible {
+    opacity: 1;
+    transform: translate(0, 0);
+    clip-path: inset(0 0 0 0);
+}
+
+/* Clip Diagonale Bas-Droite */
+[class*="blockanim-clip-diagonal-bottom-right"] {
+    transform: translate(-50px, -50px);
+    clip-path: inset(0 0 50% 50%);
+}
+
+[class*="blockanim-clip-diagonal-bottom-right"].blockanim-visible {
+    opacity: 1;
+    transform: translate(0, 0);
+    clip-path: inset(0 0 0 0);
+}
+
+/* Animation 10: Fade in from center with blur */
+ [class*="blockanim-center-blur"]  {
+    transform: scale(0.8);
+    filter: blur(10px);
+}
+
+ [class*="blockanim-center-blur"].blockanim-visible{
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0);
+}
+
+/* NEW: Fade in with 3D rotation */
+ [class*="blockanim-rotate-3d"]  {
+    transform: rotateY(90deg);
+}
+
+ [class*="blockanim-rotate-3d"].blockanim-visible{
+    opacity: 1;
+    transform: rotateY(0);
+}
+
+/* NEW: Fade in with jump */
+ [class*="blockanim-jump"]  {
+    transform: translateY(90px);
+}
+
+ [class*="blockanim-jump"].blockanim-visible{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* NEW: Fade in with stretch */
+ [class*="blockanim-stretch"]  {
+    transform: scaleX(0.3);
+}
+
+ [class*="blockanim-stretch"].blockanim-visible{
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+/* NEW: Fade in with diagonal slide */
+ [class*="blockanim-diagonal"]  {
+    transform: translate(-20px, 20px);
+}
+
+[class*="blockanim-diagonal"].blockanim-visible{
+    opacity: 1;
+    transform: translate(0, 0);
+}
+/* NEW: Fade in with diagonal slide - Haut-Gauche */
+ [class*="blockanim-diagonal-top-left"]  {
+    transform: translate(-20px, -20px);
+}
+
+ [class*="blockanim-diagonal-top-left"].blockanim-visible{
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+/* NEW: Fade in with diagonal slide - Haut-Droite */
+ [class*="blockanim-diagonal-top-right"]  {
+    transform: translate(20px, -20px);
+}
+
+[class*="blockanim-diagonal-top-right"].blockanim-visible{
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+/* NEW: Fade in with diagonal slide - Bas-Gauche */
+ [class*="blockanim-diagonal-bottom-left"]  {
+    transform: translate(-20px, 20px);
+}
+
+[class*="blockanim-diagonal-bottom-left"].blockanim-visible{
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+/* NEW: Fade in with diagonal slide - Bas-Droite */
+ [class*="blockanim-diagonal-bottom-right"]  {
+    transform: translate(20px, 20px);
+}
+
+[class*="blockanim-diagonal-bottom-right"].blockanim-visible{
+    opacity: 1;
+    transform: translate(0, 0);
+}
+/* NEW: Fade in with skew */
+ [class*="blockanim-skew"]  {
+    transform: skewX(-40deg);
+}
+
+[class*="blockanim-skew"].blockanim-visible{
+    opacity: 1;
+    transform: skewX(0);
+}
+
+/* NEW: Fade in with zoom */
+ [class*="blockanim-zoom"]  {
+    transform: scale(0.5);
+}
+
+[class*="blockanim-zoom"].blockanim-visible{
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* NEW: Fade in with flip */
+ [class*="blockanim-flip"]  {
+    transform: rotateX(90deg);
+}
+
+[class*="blockanim-flip"].blockanim-visible{
+    opacity: 1;
+    transform: rotateX(0);
+}
+
+/* NEW: Fade in with shake */
+ [class*="blockanim-shake"]  {
+    transform: translateX(-10px);
+}
+
+[class*="blockanim-shake"].blockanim-visible{
+    opacity: 1;
+    animation: shakeEffect 0.7s ease forwards;
+}
+
+@keyframes shakeEffect {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25%, 75% {
+        transform: translateX(-10px);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+}
+
+/* NEW: Fade in with blur and scale */
+ [class*="blockanim-blur-scale"]  {
+    transform: scale(0.8);
+    filter: blur(10px);
+}
+
+[class*="blockanim-blur-scale"].blockanim-visible{
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0);
+}
+
+/* NEW: Fade in with slide and rotate */
+ [class*="blockanim-slide-rotate"]  {
+    transform: translateX(-50px) rotate(-10deg);
+}
+
+[class*="blockanim-slide-rotate"].blockanim-visible{
+    opacity: 1;
+    transform: translateX(0) rotate(0);
+}
+/* NEW: Fade in with tilt */
+ [class*="blockanim-tilt"]  {
+    transform: rotate(-10deg) scale(0.9);
+}
+
+[class*="blockanim-tilt"].blockanim-visible{
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+}
+
+/* NEW: Fade in with compress */
+ [class*="blockanim-compress"]  {
+    transform: scaleY(0.5);
+}
+
+[class*="blockanim-compress"].blockanim-visible{
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+/* NEW: Fade in with swing */
+ [class*="blockanim-swing"]  {
+    transform: rotate(15deg);
+}
+
+[class*="blockanim-swing"].blockanim-visible{
+    opacity: 1;
+    animation: swingEffect 0.7s ease-in-out forwards;
+}
+
+@keyframes swingEffect {
+    0% {
+        transform: rotate(15deg);
+    }
+    50% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* NEW: Fade in with unfold */
+ [class*="blockanim-unfold"]  {
+    transform: scaleY(0);
+    transform-origin: top;
+}
+
+[class*="blockanim-unfold"].blockanim-visible{
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+/* NEW: Fade in with roll */
+ [class*="blockanim-roll"]  {
+    transform: translateX(-70%) rotate(-30deg);
+}
+
+[class*="blockanim-roll"].blockanim-visible{
+    opacity: 1;
+    transform: translateX(0) rotate(0);
+}
+
+/* NEW: Fade in with fold */
+ [class*="blockanim-fold"]  {
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+[class*="blockanim-fold"].blockanim-visible{
+    opacity: 1;
+    transform: scaleX(1);
+}
+@media all and (max-width:768px) {
+    html body *:not(header):has([class*="blockanim-"]) {
+            contain: paint;
+        }
+}
