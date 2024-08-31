@@ -4,6 +4,8 @@ blockAnim - Dumb, lightweight &amp; class based css animations for your website.
 
 **blockAnim** is a minimalist library designed to add elegant block animations to your website. With just 1kb of vanilla JS and 5kb of CSS, it brings your divs, images, and other elements to life in seconds.
 
+![blockAnim](./blockanim.gif)
+
 ## Features
 
 - **Lightweight**: Only 1kb of JavaScript and 5kb of CSS.
