@@ -1,3 +1,5 @@
+blockAnim v1 is deprecated. Please visit https://github.com/gc-guillaume/blockanim-v2 !
+
 # blockAnim
 blockAnim - Dumb, lightweight &amp; class based css animations for your website.
 # blockAnim
